@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>age</title>
+</head>
+<body>
+	<!-- form that allows users to enter their year of birth -->
+<form>
+	<label>Enter year of birth</label>
+	<input id="year" type="number" name="yearofbirth" required="year of birth">
+
+	<input onclick="yearFunction()" type="submit" value="Submit">
+
+
+</form>
+</body>
+
+<!-- sript that calculates age -->
+<script>
+	// getting age
+	function yeaeFunction() {
+		var year= document.getElementById("year").value;
+		var age= 2019 - year;
+
+		// conditions for the age brackets
+		if (age < 18) {
+			console.log("you are minor");
+
+		}
+		else if(age > 18 && < 37){
+			console.log("you are a youth");
+		}
+
+		else{
+			console.log("you are an elder");
+		}
+	}
+</script>
+</html>s
